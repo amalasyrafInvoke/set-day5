@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Behavior</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        font-family: sans-serif;
+        scroll-behavior: smooth;
+      }
+      #container {
+        width: 300%;
+        height: 100%;
+      }
+
+      header {
+        width: 100%;
+        height: 60px;
+        background-color: skyblue;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+
+      header ul {
+        list-style: none;
+        display: flex;
+      }
+
+      header ul li {
+        margin: 20px;
+      }
+
+      .section {
+        width: calc(100%/3);
+        height: 100%;
+        font-size: 80px;
+        padding-top: 60px;
+        float: left;
+      }
+
+      .home-section {
+        background-color: #4a403a;
+      }
+      .about-section {
+        background-color: #a45d5d;
+      }
+      .contact-section {
+        background-color: #ffc069;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </header>
+
+      <div id="home" class="section home-section">
+        Home
+      </div>
+      <div id="about" class="section about-section">
+        About
+      </div>
+      <div id="contact" class="section contact-section">
+        Contact
+      </div>
+    </div>
+  </body>
+</html>
